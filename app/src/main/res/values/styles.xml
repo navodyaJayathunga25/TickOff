@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavTextBold" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CheckBoxPurple" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorControlNormal">#9C27B0</item>
+        <item name="colorControlActivated">#7B1FA2</item>
+    </style>
+
+    <style name="RoundedDialog" parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:elevation">8dp</item>
+        <item name="itemBackground">@null</item>
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavTextBold</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavTextBold</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+    </style>
+
+</resources>

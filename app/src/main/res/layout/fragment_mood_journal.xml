@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6FF">
+
+    <!-- Scrollable main content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Gradient Title -->
+            <TextView
+                android:id="@+id/tvMoodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_mood_journal"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/gradient_purple"
+                android:padding="8dp"
+                android:elevation="4dp" />
+
+            <!-- Dynamic Date -->
+            <TextView
+                android:id="@+id/tvMoodDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="#6A0080"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"/>
+
+            <!-- Friendly Intro -->
+            <TextView
+                android:id="@+id/tvMoodIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_i_am"
+                android:textSize="22sp"
+                android:textColor="#4A148C"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <!-- RecyclerView for moods -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="24dp" />
+
+            <!-- View Previous Button -->
+            <Button
+                android:id="@+id/btnViewPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_previous_moods"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#9C27B0"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button (FAB) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_mood"
+        app:tint="@android:color/white"
+        app:backgroundTint="#9C27B0" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

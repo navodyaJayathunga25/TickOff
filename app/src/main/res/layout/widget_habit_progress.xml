@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/widget_bg_gradient"
+    android:padding="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/tvWidgetAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tickoff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Percentage -->
+    <TextView
+        android:id="@+id/tvWidgetPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/tvWidgetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_s_habit_progress"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Motivational Quote -->
+    <TextView
+        android:id="@+id/tvWidgetMotivation"
+        android:text="@string/keep_going_you_re_doing_great"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
